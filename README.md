@@ -7,20 +7,20 @@ An AR-to-physical data visualisation device: a phone-tracked handheld stick with
 ## System Architecture
 
 ```
-┌─────────────────────┐         MQTT          ┌──────────────────────┐
-│   Unity (AR app)     │ ─────────────────────▶│  ESP8266 Feather     │
-│   Phone-mounted       │  publish: LED index    │  Huzzah + NeoPixel   │
-│   AR Foundation scene  │  topic:                │  strip (144 LEDs)    │
-│                       │  student/ucfnake/       │                      │
-│  - Tracks stick pose   │  PhantomLines           │  - Subscribes to     │
-│    via phone sensors   │                        │    LED index topic   │
-│  - Raycasts from       │                        │  - Lights matching   │
-│    Point A to          │                        │    LED, clears prev  │
-│    Environment layer   │                        │                      │
-│  - Converts hit        │                        │                      │
-│    distance → LED      │                        │                      │
-│    index                │                        │                      │
-└─────────────────────┘                         └──────────────────────┘
+┌─────────────────────┐         MQTT           ┌──────────────────────┐
+│   Unity (AR app)    │ ─────────────────────▶ │  ESP8266 Feather     │
+│   Phone-mounted     │  publish: LED index    │  Huzzah + NeoPixel   │
+│  AR Foundation scene│  topic:                │  strip (144 LEDs)    │
+│                     │  student/ucfnake/      │                      │
+│  - Tracks stick pose│  PhantomLines          │  - Subscribes to     │
+│    via phone sensors│                        │    LED index topic   │
+│  - Raycasts from    │                        │  - Lights matching   │
+│    Point A to       │                        │    LED, clears prev  │
+│    Environment layer│                        │                      │
+│  - Converts hit     │                        │                      │
+│    distance → LED   │                        │                      │
+│    index            │                        │                      │
+└─────────────────────┘                        └──────────────────────┘
         │
         ▼
   mqtt.cetools.org:1884 (broker)
