@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Cube1
+  - Cube2
+  - mqttManager
+  - WallAndFloor
+  - LengthWidthWall
+  - SideWall
+  - WC
+  - Body1
+  - Box001
+  - floorWall
+  - grabberObj
+  - handleObj
+  - sink1
+  - wall1door1
+  - wall2
+  - wall3sink1
+  - wall4toilet
+  - handleobj1
+  - obj1
+  - obj2
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Stick
+  - Environment
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - XR Simulation
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  m_RenderingLayers:
+  - Default
